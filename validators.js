@@ -15,6 +15,7 @@ function validateUser(username, minLen) {
   if (!/^[a-zA-Z0-9]+$/.test(username)) return false;
   if (/^[0-9]/.test(username)) return false;
   return true;
+  console.log("hello");
 }
 
 module.exports = { validateUser };
